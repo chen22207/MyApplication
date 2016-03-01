@@ -1,0 +1,29 @@
+<resources>
+	<string name="app_name">TicketCopy</string>
+
+	<string name="title_bus_ticket_search">车次查询</string>
+
+	<string name="navigation_menu_common_passenger">常用旅客</string>
+	<string name="navigation_menu_my_order">我的订单</string>
+	<string name="navigation_menu_my_ticket">我的车票</string>
+	<string name="navigation_menu_about_us">关于我们</string>
+	<string name="navigation_menu_upgrade">版本升级</string>
+	<string name="navigation_menu_setting">设置</string>
+
+	<string name="main_title_ticketsearch">车次查询</string>
+	<string name="main_title_myticket">我的汽车票</string>
+
+	<string name="main_tab_local">本地通</string>
+	<string name="main_tab_bus_number_search">车次查询</string>
+	<string name="main_tab_my_ticket">我的车票</string>
+
+	<string name="tip_navigation_open">菜单展开</string>
+	<string name="tip_navigation_close">菜单关闭</string>
+
+	<string name="main_two_1">出发地</string>
+	<string name="main_two_2">目的地</string>
+	<string name="main_two_3">日&#160;&#160;期</string>
+	<string name="main_two_4">历史路线</string>
+	<string name="main_two_5">立即查询</string>
+
+</resources>

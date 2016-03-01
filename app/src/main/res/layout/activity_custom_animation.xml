@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/holo_blue_light">
+
+	<Button
+		android:id="@+id/custom_animation_bt"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		android:text="你好吗"
+		android:textSize="20sp"
+		android:background="?android:attr/selectableItemBackground"
+		android:layout_centerInParent="true" />
+
+	<Switch
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/switch1"
+		android:textOn="单程"
+		android:textOff="往返"
+		android:layout_centerHorizontal="true" />
+</RelativeLayout>

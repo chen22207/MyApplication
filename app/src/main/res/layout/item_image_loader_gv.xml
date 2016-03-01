@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/item_image_loader_iv"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:scaleType="centerCrop"
+		android:src="@drawable/img_no" />
+
+	<ImageButton
+		android:id="@+id/item_image_loader_selected_ib"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_margin="10dp"
+		android:clickable="false"
+		android:src="@drawable/btn_check_off" />
+</RelativeLayout>

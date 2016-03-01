@@ -1,0 +1,109 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.cs.ticketcopy.fragments.MainTwoFragment">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="@dimen/middle_space">
+
+		<TableLayout
+			android:id="@+id/main_two_tl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:stretchColumns="1"
+			android:layout_toStartOf="@+id/main_two_change_address_bt">
+
+			<TableRow>
+
+				<TextView
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:minEms="4"
+					android:text="@string/main_two_1" />
+
+				<TextView
+					android:layout_height="@dimen/super_plus_space"
+					android:background="@color/colorPrimaryLight" />
+
+
+			</TableRow>
+
+			<TableRow android:layout_marginTop="@dimen/small_space">
+
+				<TextView
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:minEms="4"
+					android:text="@string/main_two_2" />
+
+				<TextView
+					android:layout_height="@dimen/super_plus_space"
+					android:background="@color/colorPrimaryLight" />
+			</TableRow>
+
+			<TableRow>
+
+				<TextView
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="@string/main_two_3"
+					android:minEms="4" />
+
+				<RelativeLayout android:layout_height="@dimen/super_plus_space">
+
+					<android.support.v7.internal.widget.TintImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/ic_action_left"
+						android:backgroundTint="@color/colorPrimary"
+						android:elevation="1dp"
+						android:layout_marginStart="@dimen/small_space"
+						android:layout_centerVertical="true" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:textSize="@dimen/large_size"
+						tools:text="10-15" />
+
+					<android.support.v7.internal.widget.TintImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/ic_action_right"
+						android:backgroundTint="@color/colorPrimary"
+						android:layout_alignParentEnd="true"
+						android:layout_marginEnd="@dimen/small_space"
+						android:layout_centerVertical="true"
+						android:elevation="1dp" />
+				</RelativeLayout>
+			</TableRow>
+		</TableLayout>
+
+		<android.support.v7.widget.AppCompatButton
+			android:id="@+id/main_two_change_address_bt"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="@dimen/small_space"
+			android:layout_marginStart="@dimen/small_space"
+			android:layout_marginTop="@dimen/large_space"
+			android:background="@drawable/ic_action_repeat"
+			android:backgroundTint="@color/colorPrimary" />
+
+		<android.support.v7.widget.AppCompatButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/main_two_tl"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/middle_space"
+			android:text="@string/main_two_5"
+			android:backgroundTint="@color/colorPrimary"
+			android:textColor="@color/White" />
+	</RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
