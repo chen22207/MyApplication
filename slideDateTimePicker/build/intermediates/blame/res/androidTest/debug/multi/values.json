@@ -46,8 +46,8 @@
                     "startColumn": 4,
                     "startOffset": 180,
                     "endLine": 10,
-                    "endColumn": 12,
-                    "endOffset": 466
+                    "endColumn": 9,
+                    "endOffset": 424
                 },
                 "from": {
                     "file": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
@@ -56,8 +56,8 @@
                         "startColumn": 4,
                         "startOffset": 180,
                         "endLine": 10,
-                        "endColumn": 12,
-                        "endOffset": 466
+                        "endColumn": 9,
+                        "endOffset": 424
                     }
                 }
             },
@@ -65,20 +65,20 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 471,
+                    "startOffset": 429,
                     "endLine": 13,
-                    "endColumn": 12,
-                    "endOffset": 626
+                    "endColumn": 9,
+                    "endOffset": 575
                 },
                 "from": {
                     "file": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 471,
+                        "startOffset": 429,
                         "endLine": 13,
-                        "endColumn": 12,
-                        "endOffset": 626
+                        "endColumn": 9,
+                        "endOffset": 575
                     }
                 }
             }

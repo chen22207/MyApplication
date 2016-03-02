@@ -8,8 +8,8 @@
                     "startColumn": 4,
                     "startOffset": 55,
                     "endLine": 4,
-                    "endColumn": 12,
-                    "endOffset": 201
+                    "endColumn": 9,
+                    "endOffset": 192
                 },
                 "from": {
                     "file": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\values-v14\\values-v14.xml",
@@ -18,8 +18,8 @@
                         "startColumn": 4,
                         "startOffset": 55,
                         "endLine": 4,
-                        "endColumn": 12,
-                        "endOffset": 201
+                        "endColumn": 9,
+                        "endOffset": 192
                     }
                 }
             }
