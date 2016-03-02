@@ -23,6 +23,7 @@ import com.cs.myapplication.customCamera.CustomCamera;
 import com.cs.myapplication.okhttp.OkhttpTestActivity;
 import com.cs.myapplication.retrofit.RetrofitTest;
 import com.cs.myapplication.rxandroid.ImageGalleryActivity;
+import com.cs.myapplication.rxandroid.NormalTest;
 import com.cs.myapplication.swipeRefreshLayout.SwipeRefreshLayoutActivity;
 import com.cs.myapplication.touchTest.TouchTestActivity;
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		aMap.put(6, "RxAndroid-image-gallery");
 		aMap.put(7, "retrofit");
 		aMap.put(8, "okhttp");
+		aMap.put(9, "rx-normal-test");
 		mName = Collections.unmodifiableMap(aMap);
 	}
 
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		classMap.put(6, ImageGalleryActivity.class);
 		classMap.put(7, RetrofitTest.class);
 		classMap.put(8, OkhttpTestActivity.class);
+		classMap.put(9, NormalTest.class);
 		mClazz = Collections.unmodifiableMap(classMap);
 	}
 

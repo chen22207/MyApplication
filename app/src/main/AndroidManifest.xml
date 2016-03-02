@@ -34,7 +34,11 @@
 		<activity android:name=".rxandroid.ImageGalleryActivity" />
 		<activity android:name=".retrofit.RetrofitTest" />
 		<activity android:name=".okhttp.OkhttpTestActivity" />
-		<activity android:name=".capture.CaptureActivity"></activity>
+		<activity android:name=".capture.CaptureActivity" />
+		<activity
+			android:name=".rxandroid.NormalTest"
+			android:label="@string/title_activity_normal_test"
+			android:theme="@style/AppTheme.NoActionBar"></activity>
 	</application>
 
 </manifest>
