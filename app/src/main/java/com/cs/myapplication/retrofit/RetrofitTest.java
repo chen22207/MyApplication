@@ -12,18 +12,22 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.jakewharton.rxbinding.view.RxView;
+import com.jakewharton.rxbinding.widget.RxTextView;
 
 import java.io.IOException;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Type;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.Converter;
-import retrofit2.GsonConverterFactory;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 
 public class RetrofitTest extends AppCompatActivity {
 
@@ -40,40 +44,70 @@ public class RetrofitTest extends AppCompatActivity {
 		setContentView(R.layout.activity_retrofit_test);
 		ipEt = (EditText) findViewById(R.id.retrofit_ip_et);
 		ipBt = (Button) findViewById(R.id.retrofit_ip_bt);
-		ipBt.setOnClickListener((v) -> new Thread(() -> {
+//		test1();
+		RxView.clicks(ipBt)
+				.throttleFirst(1000, TimeUnit.MILLISECONDS)
+				.subscribe(aVoid -> {
+					System.out.println("click");
+				});
 
-			Retrofit retrofit = new Retrofit.Builder()
-					.baseUrl(url)
-					.addConverterFactory(GsonConverterFactory.create())
-					.build();
+		RxTextView.textChanges(ipEt)
+				.subscribe(this::print);
 
-			WeatherService service = retrofit.create(WeatherService.class);
-			Call<ResponseBody> call = service.getWeather("hangzhou", apikey);
-			try {
-				Response<ResponseBody> execute = call.execute();
-				String string = execute.body().string();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		Retrofit retrofit = new Retrofit.Builder()
+				.baseUrl(url)
+				.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+				.addConverterFactory(GsonConverterFactory.create())
+				.build();
 
-//			IpService ipService = retrofit.create(IpService.class);
-//
-//			Call<IpInfo> call = ipService.getIpInfo("json", ipEt.getText().toString());
-//			call.enqueue(new Callback<IpInfo>() {
-//				@Override
-//				public void onResponse(Response<IpInfo> response) {
-//					System.out.println(response.code());
-//				}
-//
-//				@Override
-//				public void onFailure(Throwable t) {
-//					System.out.println(t.getMessage());
-//				}
-//			});
+		WeatherService service = retrofit.create(WeatherService.class);
+		service.getWeather1("hangzhou")
+				.subscribeOn(Schedulers.io())
+				.observeOn(AndroidSchedulers.mainThread())
+				.subscribe(new Subscriber<ResponseBody>() {
+					@Override
+					public void onCompleted() {
 
-		}).start());
+					}
 
-//		Gson gson = new Gson();
+					@Override
+					public void onError(Throwable e) {
+						System.out.println(e.getMessage());
+					}
+
+					@Override
+					public void onNext(ResponseBody responseBody) {
+						try {
+							String s = responseBody.string();
+							System.out.println(s);
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
+					}
+				});
+
+
+	}
+
+	private void print(CharSequence charSequence) {
+		System.out.println(charSequence);
+	}
+
+	private void test1() {
+		Retrofit retrofit = new Retrofit.Builder()
+				.baseUrl(url)
+				.addConverterFactory(GsonConverterFactory.create())
+				.build();
+
+		WeatherService service = retrofit.create(WeatherService.class);
+		Call<ResponseBody> call = service.getWeather("hangzhou", apikey);
+		try {
+			Response<ResponseBody> execute = call.execute();
+			String string = execute.body().string();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		//		Gson gson = new Gson();
 //		String jsonStr = "{'name1':'tom','person':{'name':'jack','age':'23'}}";
 //		Person p = gson.fromJson(jsonStr, Person.class);
 //		System.out.println(p.toString());
@@ -88,15 +122,6 @@ public class RetrofitTest extends AppCompatActivity {
 		Person pp = new Person();
 		Person person = gson.fromJson(parse, Person.class);
 		System.out.println(jj);
-
-
-	}
-
-	private class mConverterFackory extends Converter.Factory {
-		@Override
-		public Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations, Retrofit retrofit) {
-			return super.responseBodyConverter(type, annotations, retrofit);
-		}
 	}
 
 

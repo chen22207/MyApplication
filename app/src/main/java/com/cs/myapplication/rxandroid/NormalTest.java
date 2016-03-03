@@ -38,6 +38,11 @@ public class NormalTest extends AppCompatActivity {
 		});
 
 
+//		normalTest();
+
+	}
+
+	private void normalTest() {
 		Student chen = new Student();
 		chen.setName("chen");
 		List<Course> courses = new ArrayList<>();
@@ -73,7 +78,6 @@ public class NormalTest extends AppCompatActivity {
 		Observable.from(students)
 				.flatMap(student -> Observable.from(student.getCourses()))
 				.subscribe(subscriber);
-
 	}
 
 }

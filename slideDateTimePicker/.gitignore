@@ -5,6 +5,7 @@
 *.ap_
 
 # Files for the Dalvik VM
+/build
 *.dex
 
 # Java class files
