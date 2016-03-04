@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-	package="com.cs.myapplication"
-	xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.cs.myapplication">
 
 	<uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -38,6 +37,10 @@
 		<activity
 			android:name=".rxandroid.NormalTest"
 			android:label="@string/title_activity_normal_test"
+			android:theme="@style/AppTheme.NoActionBar" />
+		<activity
+			android:name=".databinding.DataBindingActivity"
+			android:label="@string/title_activity_data_binding"
 			android:theme="@style/AppTheme.NoActionBar"></activity>
 	</application>
 

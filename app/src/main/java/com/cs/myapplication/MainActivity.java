@@ -20,6 +20,7 @@ import com.cs.myapplication.Db.DbActivity;
 import com.cs.myapplication.ImageLoader.ImageLoaderActivity;
 import com.cs.myapplication.customAnimation.CustomAnimationActivity;
 import com.cs.myapplication.customCamera.CustomCamera;
+import com.cs.myapplication.databinding.DataBindingActivity;
 import com.cs.myapplication.okhttp.OkhttpTestActivity;
 import com.cs.myapplication.retrofit.RetrofitTest;
 import com.cs.myapplication.rxandroid.ImageGalleryActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		aMap.put(7, "retrofit");
 		aMap.put(8, "okhttp");
 		aMap.put(9, "rx-normal-test");
+		aMap.put(10, "dataBinding");
 		mName = Collections.unmodifiableMap(aMap);
 	}
 
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		classMap.put(7, RetrofitTest.class);
 		classMap.put(8, OkhttpTestActivity.class);
 		classMap.put(9, NormalTest.class);
+		classMap.put(10, DataBindingActivity.class);
 		mClazz = Collections.unmodifiableMap(classMap);
 	}
 
