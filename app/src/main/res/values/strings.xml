@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">MyApplication</string>
+	<string name="app_name">MyApplication</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="take_pic">拍照</string>
-    <string name="title_activity_normal_test">NormalTest</string>
-    <string name="title_activity_data_binding">DataBindingActivity</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="action_settings">Settings</string>
+	<string name="take_pic">拍照</string>
+	<string name="title_activity_normal_test">NormalTest</string>
+	<string name="title_activity_data_binding">DataBindingActivity</string>
 </resources>

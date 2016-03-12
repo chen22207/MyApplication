@@ -48,9 +48,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		aMap.put(7, "retrofit");
 		aMap.put(8, "okhttp");
 		aMap.put(9, "rx-normal-test");
-        aMap.put(10, "dataBinding");
-        mName = Collections.unmodifiableMap(aMap);
-    }
+		aMap.put(10, "dataBinding");
+		mName = Collections.unmodifiableMap(aMap);
+	}
 
 	static {
 		Map<Integer, Class> classMap = new HashMap<>();
@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		classMap.put(7, RetrofitTest.class);
 		classMap.put(8, OkhttpTestActivity.class);
 		classMap.put(9, NormalTest.class);
-        classMap.put(10, DataBindingActivity.class);
-        mClazz = Collections.unmodifiableMap(classMap);
-    }
+		classMap.put(10, DataBindingActivity.class);
+		mClazz = Collections.unmodifiableMap(classMap);
+	}
 
 	private ListView mListView;
 

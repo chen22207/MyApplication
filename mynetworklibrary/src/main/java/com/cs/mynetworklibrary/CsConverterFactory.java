@@ -16,28 +16,28 @@ import retrofit2.Retrofit;
  */
 public class CsConverterFactory extends Converter.Factory {
 
-    private String xPath;
+	private String xPath;
 
-    public static CsConverterFactory create() {
-        return create(new Gson());
-    }
+	public static CsConverterFactory create() {
+		return create(new Gson());
+	}
 
-    public static CsConverterFactory create(Gson gson) {
-        return new CsConverterFactory(gson);
-    }
+	public static CsConverterFactory create(Gson gson) {
+		return new CsConverterFactory(gson);
+	}
 
-    private final Gson gson;
+	private final Gson gson;
 
-    private CsConverterFactory(Gson gson) {
-        if (gson == null) throw new NullPointerException("gson == null");
-        this.gson = gson;
-    }
+	private CsConverterFactory(Gson gson) {
+		if (gson == null) throw new NullPointerException("gson == null");
+		this.gson = gson;
+	}
 
-    @Override
-    public Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations,
-                                                            Retrofit retrofit) {
-        TypeAdapter<?> adapter = gson.getAdapter(TypeToken.get(type));
+	@Override
+	public Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations,
+	                                                        Retrofit retrofit) {
+		TypeAdapter<?> adapter = gson.getAdapter(TypeToken.get(type));
 //		return new GsonResponseBodyConverter<>(adapter);
-        return null;
-    }
+		return null;
+	}
 }

@@ -9,14 +9,14 @@ import com.cs.myapplication.databinding.bean.User;
 
 public class DataBindingActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        com.cs.myapplication.databinding.ActivityDataBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_data_binding);
-        User user = new User("tom", 12, "abc street");
-        binding.setUser(user);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		com.cs.myapplication.databinding.ActivityDataBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_data_binding);
+		User user = new User("tom", 12, "abc street");
+		binding.setUser(user);
 
 
-    }
+	}
 
 }
