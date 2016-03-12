@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		aMap.put(9, "rx-normal-test");
         aMap.put(10, "dataBinding");
         mName = Collections.unmodifiableMap(aMap);
-	}
+    }
 
 	static {
 		Map<Integer, Class> classMap = new HashMap<>();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		classMap.put(9, NormalTest.class);
         classMap.put(10, DataBindingActivity.class);
         mClazz = Collections.unmodifiableMap(classMap);
-	}
+    }
 
 	private ListView mListView;
 

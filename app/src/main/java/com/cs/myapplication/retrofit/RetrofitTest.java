@@ -52,7 +52,7 @@ public class RetrofitTest extends AppCompatActivity {
 				});
 
 		RxTextView.textChanges(ipEt)
-				.subscribe(this::print);
+                .subscribe(System.out::println);
 
 		Retrofit retrofit = new Retrofit.Builder()
 				.baseUrl(url)
@@ -62,7 +62,8 @@ public class RetrofitTest extends AppCompatActivity {
 
 		WeatherService service = retrofit.create(WeatherService.class);
 		service.getWeather1("hangzhou")
-				.subscribeOn(Schedulers.io())
+                .flatMap(responseBody -> service.getWeather1("beijing"))
+                .subscribeOn(Schedulers.io())
 				.observeOn(AndroidSchedulers.mainThread())
 				.subscribe(new Subscriber<ResponseBody>() {
 					@Override

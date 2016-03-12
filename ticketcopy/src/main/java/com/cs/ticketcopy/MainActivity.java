@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 				R.string.tip_navigation_open,
 				R.string.tip_navigation_close
 		);
-		mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
 
 		mTabLayout = (TabLayout) findViewById(R.id.main_tablayout);
 		mViewPager = (ViewPager) findViewById(R.id.main_viewpager);
