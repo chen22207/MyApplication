@@ -55,8 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
 		mTabLayout = (TabLayout) findViewById(R.id.main_tablayout);
 		mViewPager = (ViewPager) findViewById(R.id.main_viewpager);
-		userNameTv = (TextView) findViewById(R.id.navigation_header_name_tv);
-	}
+        mNavigationView = (NavigationView) findViewById(R.id.main_navigation_view);
+        userNameTv = (TextView) mNavigationView.getHeaderView(0).findViewById(R.id.navigation_header_name_tv);
+    }
 
 	private void initTab() {
 

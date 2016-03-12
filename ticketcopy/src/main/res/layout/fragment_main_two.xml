@@ -14,7 +14,8 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:stretchColumns="1"
-			android:layout_toStartOf="@+id/main_two_change_address_bt">
+            android:layout_toStartOf="@+id/main_two_change_address_bt"
+            android:layout_toLeftOf="@+id/main_two_change_address_bt">
 
 			<TableRow>
 
@@ -54,13 +55,14 @@
 
 				<RelativeLayout android:layout_height="@dimen/super_plus_space">
 
-					<android.support.v7.internal.widget.TintImageView
+                    <android.support.v7.widget.AppCompatImageView
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:background="@drawable/ic_action_left"
 						android:backgroundTint="@color/colorPrimary"
 						android:elevation="1dp"
 						android:layout_marginStart="@dimen/small_space"
+                        android:layout_marginLeft="@dimen/middle_space"
 						android:layout_centerVertical="true" />
 
 					<TextView
@@ -70,13 +72,15 @@
 						android:textSize="@dimen/large_size"
 						tools:text="10-15" />
 
-					<android.support.v7.internal.widget.TintImageView
+                    <android.support.v7.widget.AppCompatImageView
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:background="@drawable/ic_action_right"
 						android:backgroundTint="@color/colorPrimary"
 						android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
 						android:layout_marginEnd="@dimen/small_space"
+                        android:layout_marginRight="@dimen/middle_space"
 						android:layout_centerVertical="true"
 						android:elevation="1dp" />
 				</RelativeLayout>
@@ -88,6 +92,7 @@
 			android:layout_width="40dp"
 			android:layout_height="40dp"
 			android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
 			android:layout_marginEnd="@dimen/small_space"
 			android:layout_marginStart="@dimen/small_space"
 			android:layout_marginTop="@dimen/large_space"

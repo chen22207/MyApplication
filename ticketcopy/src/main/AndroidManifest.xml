@@ -17,7 +17,7 @@
 		</activity>
 		<activity
 			android:name=".activities.BusTicketSearchActivity"
-			android:label="@string/title_bus_ticket_search"></activity>
+            android:label="@string/title_bus_ticket_search"/>
 	</application>
 
 </manifest>
