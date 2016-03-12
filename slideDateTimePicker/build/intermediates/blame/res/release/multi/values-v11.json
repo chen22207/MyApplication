@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\release\\values-v11\\values-v11.xml",
+        "outputFile": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\release\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,14 +12,14 @@
                     "endOffset": 178
                 },
                 "from": {
-                    "file": "D:\\Demo\\MyApplication\\slideDateTimePicker\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\src\\main\\res\\values-v11\\styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 1,
-                        "startOffset": 156,
+                        "startOffset": 162,
                         "endLine": 8,
                         "endColumn": 9,
-                        "endOffset": 279
+                        "endOffset": 287
                     }
                 }
             }

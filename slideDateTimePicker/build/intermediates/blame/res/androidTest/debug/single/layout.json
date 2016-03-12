@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_tab.xml",
-        "source": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_tab.xml"
+        "merged": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\slide_date_time_picker.xml",
+        "source": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\slide_date_time_picker.xml"
     },
     {
-        "merged": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\fragment_time.xml",
-        "source": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\fragment_time.xml"
+        "merged": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\fragment_time.xml",
+        "source": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\fragment_time.xml"
     },
     {
-        "merged": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\fragment_date.xml",
-        "source": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\fragment_date.xml"
+        "merged": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\fragment_date.xml",
+        "source": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\fragment_date.xml"
     },
     {
-        "merged": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\slide_date_time_picker.xml",
-        "source": "D:\\Demo\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\slide_date_time_picker.xml"
+        "merged": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\custom_tab.xml",
+        "source": "E:\\androidworkspace\\GITHUB\\MyApplication\\slideDateTimePicker\\build\\intermediates\\bundles\\debug\\res\\layout\\custom_tab.xml"
     }
 ]

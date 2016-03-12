@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-adapters" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-adapters/rxjava" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/gson" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/jackson" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/moshi" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/protobuf" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/scalars" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/simplexml" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/wire" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/retrofit-mock" charset="UTF-8" />
-    <file url="file://$USER_HOME$/Documents/GitHub/retrofit/samples" charset="UTF-8" />
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -3,31 +3,6 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="MavenProjectsManager">
-    <option name="originalFiles">
-      <list>
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/pom.xml" />
-      </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-adapters/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-adapters/rxjava/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/gson/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/jackson/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/moshi/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/protobuf/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/scalars/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/simplexml/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-converters/wire/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit-mock/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/retrofit/pom.xml" />
-        <option value="$USER_HOME$/Documents/GitHub/retrofit/samples/pom.xml" />
-      </set>
-    </option>
-  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
