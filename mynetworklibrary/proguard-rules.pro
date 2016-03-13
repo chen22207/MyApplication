@@ -16,4 +16,11 @@
 #   public *;
 #}
 
+# --------retrofit package--------------
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes Exceptions
+# --------retrofit package--------------
+
 
