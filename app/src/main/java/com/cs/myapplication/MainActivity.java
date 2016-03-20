@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.cs.myapplication.Db.DbActivity;
 import com.cs.myapplication.ImageLoader.ImageLoaderActivity;
+import com.cs.myapplication.ImageSelector.ImageSelectorActivity;
 import com.cs.myapplication.customAnimation.CustomAnimationActivity;
 import com.cs.myapplication.customCamera.CustomCamera;
 import com.cs.myapplication.databinding.DataBindingActivity;
@@ -49,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		aMap.put(8, "okhttp");
 		aMap.put(9, "rx-normal-test");
 		aMap.put(10, "dataBinding");
-		mName = Collections.unmodifiableMap(aMap);
+        aMap.put(11, "imageSelector");
+        mName = Collections.unmodifiableMap(aMap);
 	}
 
 	static {
@@ -65,7 +67,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 		classMap.put(8, OkhttpTestActivity.class);
 		classMap.put(9, NormalTest.class);
 		classMap.put(10, DataBindingActivity.class);
-		mClazz = Collections.unmodifiableMap(classMap);
+        classMap.put(11, ImageSelectorActivity.class);
+        mClazz = Collections.unmodifiableMap(classMap);
 	}
 
 	private ListView mListView;

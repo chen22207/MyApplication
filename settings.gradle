@@ -1,1 +1,1 @@
-include ':app', ':ticketcopy', ':aidltest', ':slideDateTimePicker', ':mynetworklibrary'
+include ':app', ':ticketcopy', ':aidltest', ':slideDateTimePicker', ':mynetworklibrary', ':multi-image-selector'
